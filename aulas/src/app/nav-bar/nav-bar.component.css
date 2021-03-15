@@ -1,0 +1,6 @@
+.nav-active{
+    color:red;
+    font-size: large;
+    font-weight: bold;
+    transition: all 1s;
+}
