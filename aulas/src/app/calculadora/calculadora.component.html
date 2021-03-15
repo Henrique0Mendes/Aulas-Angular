@@ -1,5 +1,47 @@
-<input type="number" [(ngModel)]="n1" (input)="soma()" >
-<input type="text" [(ngModel)]="sinal" [value]="sinal" (input)="soma()" >
-<input type="number" [(ngModel)]="n2" (input)="soma()" >
 
-<h3>Resultado:{{resultado}}</h3>
+    <table class="posicao">
+        <th class="esquerda"><h4 class="branco">CASIO</h4></th>
+        <tr></tr>
+        <th>
+            <p class="ecra">{{mostrador}}</p>
+        </th>
+        <tr> <input type="button" (click)="mudarMostrador($event)" class='botaoLimpar'  value="Clear"></tr>
+       
+        <tr>
+            <td>
+                <br>
+                <input type="button" (click)="mudarMostrador($event)" class='botao'  value="*">
+                <input type="button" (click)="mudarMostrador($event)" class='botao'  value="/">
+                <input type="button" (click)="mudarMostrador($event)" class='botao'  value="-">
+                <input type="button" (click)="mudarMostrador($event)" class='botao'  value="+">
+                <br>
+            </td>
+        </tr>  
+        <td>
+            <input type="button" (click)="mudarMostrador($event)" class='botao'  value="9">
+            <input type="button" (click)="mudarMostrador($event)" class='botao'  value="8">
+            <input type="button" (click)="mudarMostrador($event)" class='botao'  value="7">
+            <input type="button" (click)="mudarMostrador($event)" class='botao'  value="6">
+            <br>
+        </td>
+        <tr>
+            <td>
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value="5">
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value="4">
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value="3">
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value="2">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value="1">
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value="0">
+                <input type="button" (click)="mudarMostrador($event)" class='botao' value=".">
+                <input type="button" (click)="calcular()" class='botao' value="=">  
+                <br>
+            </td>
+        </tr>
+        
+    </table>
+ 
