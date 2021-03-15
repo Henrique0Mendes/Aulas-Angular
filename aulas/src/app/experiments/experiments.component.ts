@@ -16,4 +16,8 @@ export class ExperimentsComponent implements OnInit {
   changeName(event){
     this.name=event.target.value;
   }
+
+  isfocus(event){
+    console.log("gfsr8ug");
+  }
 }

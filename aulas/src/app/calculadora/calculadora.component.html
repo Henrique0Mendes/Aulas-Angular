@@ -1,1 +1,5 @@
-<p>calculadora works!</p>
+<input type="number" [(ngModel)]="n1" (input)="soma()" >
+<input type="text" [(ngModel)]="sinal" [value]="sinal" (input)="soma()" >
+<input type="number" [(ngModel)]="n2" (input)="soma()" >
+
+<h3>Resultado:{{resultado}}</h3>
