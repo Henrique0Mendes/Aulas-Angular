@@ -15,8 +15,7 @@ const routes: Routes = [
   {path:"readMeGenerator", component:ReadMeGeneratorComponent},
   {path:"experiments", component:ExperimentsComponent},
   {path:"evAndRef",component:EvAndRefComponent},
-  {path:"fichaAnimal", component:FichaAnimalComponent},
-  {path:"escolheAnimal", component:EscolheAnimalComponent}
+  {path:"fichaAnimal", component:FichaAnimalComponent}
 ];
 
 @NgModule({
