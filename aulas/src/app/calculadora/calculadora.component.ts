@@ -23,7 +23,6 @@ export class CalculadoraComponent implements OnInit {
       this.equacao = this.equacao + event.target.value;
       this.mostrador = this.equacao;
     }
-    
   }
 
   calcular(){
@@ -31,4 +30,5 @@ export class CalculadoraComponent implements OnInit {
     this.mostrador = this.equacao;
   }
 
+ 
 }
