@@ -12,6 +12,7 @@ export class ExperimentsComponent implements OnInit {
   ngOnInit(): void {
   }
   name:string ="Henrique";
+  arrayAnimais : Array<string> = ["cao","gato", "papagaio", "coelho"];
 
   changeName(event){
     this.name=event.target.value;
