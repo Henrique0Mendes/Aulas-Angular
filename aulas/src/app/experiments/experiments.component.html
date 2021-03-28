@@ -1,5 +1,5 @@
 
-<input type="text" (input)="changeName($event)" value={{name}} [style.background]="name"> 
+<input type="text" (input)="changeName($event)" value={{name}} [style.background]="name" #ref> 
 
 <p>Olá {{name}}</p>
 
@@ -9,3 +9,5 @@
 <div *ngFor="let animal of arrayAnimais">
 <h4>{{animal}}</h4>
 </div>
+<button (click)='analisarReferencia()'>Referencia</button>
+<button (click)='analisarReferenciaParametro(ref)'>Ref parametro</button>
