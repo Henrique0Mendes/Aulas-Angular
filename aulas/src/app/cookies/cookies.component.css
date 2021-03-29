@@ -1,0 +1,31 @@
+.caixa{
+    bottom: 0%;
+    height: 9vh;
+    width: 100%;
+    animation: animacaoCookies;
+    animation-duration: 1s;
+    position: fixed;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    
+}
+
+.botao{
+    border-radius: 8px;
+    background-color: #1C2428 ;
+    color:white;
+    height: 30px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px black;
+    outline: none;
+}
+
+@keyframes animacaoCookies{
+ from{bottom: -25vh;}
+ to{ bottom: 0%;}
+}

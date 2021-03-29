@@ -1,13 +1,15 @@
 
 <input type="text" (input)="changeName($event)" value={{name}} [style.background]="name" #ref> 
 
+<h1 *ngIf="name=='Henrique'">Oh raio és tu!</h1>
+
 <p>Olá {{name}}</p>
 
 <input (focus)="isfocus($event)">
 
 <h2>Diretiva NG for</h2>
-<div *ngFor="let animal of arrayAnimais">
-<h4>{{animal}}</h4>
+<div *ngFor="let animal of arrayAnimais; let i=index">
+<h4 [ngStyle]="{'color': i%2==0 ? 'Red':'Blue'}">{{animal}} </h4>
 </div>
 <button (click)='analisarReferencia()'>Referencia</button>
 <button (click)='analisarReferenciaParametro(ref)'>Ref parametro</button>
