@@ -16,9 +16,12 @@ export class CalculadoraComponent implements OnInit {
   mostrador="";
 
   mudarMostrador(event){
-    if (event.target.value=="Clear"){
+    if (event.target.value=="C"){
       this.mostrador="";
       this.equacao="";
+    }else if (event.target.value=="x"){
+      this.equacao = this.equacao + "*";
+      this.mostrador = this.equacao;
     }else{
       this.equacao = this.equacao + event.target.value;
       this.mostrador = this.equacao;
